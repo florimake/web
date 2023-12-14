@@ -1,0 +1,283 @@
+:root{
+    --black:rgba(24, 24, 24, 0.836);
+    --shadow: rgba(0, 0, 0, 0.479);
+    --white-color: rgba(255, 255, 255, 0.432);
+    --body_box_color: linear-gradient(0deg, rgb(243, 243, 243), 40%, rgb(219, 219, 219));
+    --img-box-shadow: rgb(0, 0, 0);
+    --b-background-color: rgba(19, 18, 18, 0.747);
+    --text-color: rgb(235, 235, 235);
+    --hover-color:rgb(56, 0, 0);
+    --border-radius: 10px
+}
+
+*{
+    color: var(--text-color);
+    text-shadow: 0 0 1px var(--text-color);
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px; 
+    font-family:sans-serif;
+}
+p, h4{
+    padding: 15px;
+    text-align: left;
+}
+a{
+    text-decoration: none;
+    padding: 0;
+}
+
+/* Styles for screens with a maximum width of 1024px */
+@media (max-width: 1024px) {
+    body h4,
+    body p{
+        margin: 5px; 
+        padding: 5px;
+    }
+    #main-img img{
+        position: relative;
+        width: 180px;
+        padding: 15px;
+    } 
+    #main-text{
+        width: 250px;
+        padding: auto 10px;
+        margin: auto 10px;
+    }
+    #header-img img{
+        width: 180px;
+        max-height: 200px;
+    }
+    #header-img{
+        padding: 15px;
+    }
+    #header-text h1{
+        font-size: smaller;
+    }
+    #header-text{
+        padding: 0;
+        margin: 0;
+    }
+    .socializare div a,
+    .socializare div p,
+    .socializare div span{
+        padding: 0;
+        font-size: small;
+    }
+    .socializare div{
+        margin: 0;
+        padding: 0;
+        font-size: large;
+        width: 50px;
+        font-size: medium;
+    }
+}
+/* Styles for screens with a maximum width of 1024px */
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    width: 98%;
+    /* border: 1px solid var(--white-color); */
+    background-color: rgb(41, 41, 41);
+}
+header{
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    margin: 1rem;
+    padding: 1rem;
+    /* border: 1px solid var(--white-color); */
+    background-color: var(--b-background-color);
+    border-radius: var(--border-radius);;
+    border-top: 5px solid var(--white-color);
+    box-shadow: 0px -5px 5px rgba(255, 255, 255, 0.158);
+}
+#telefon{
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-width: 15vw;
+    max-width: 95vw;
+    border: 1px solid var(--white-color);
+    border-radius: var(--border-radius);;
+    padding: 0;
+    margin: 1rem;
+    background-color:rgb(204, 203, 203);
+}
+#telefon h3{
+    color: var(--b-background-color);
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0;
+}
+#telefon div {
+    color: var(--b-background-color);
+    font-size: 1.5em;
+}
+#telefon a{
+    text-decoration: none;
+    padding: 0;
+}
+#telefon:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all .1s ease-in-out;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.158);
+    background-color: aliceblue;
+}
+header div{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    /* border: 1px solid var(--white-color); */
+}
+#header-img img{
+    height: 450px;
+    position:relative;
+    min-width: 320px;
+    max-width: 850px;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 10px var(--img-box-shadow);
+    /* background-image: url("books2.jpg"); */
+    /* background-position:center; */
+    /* background-repeat: no-repeat; */
+}
+#header-text{
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 500px;
+}
+#header-text h1{
+    font-size: x-large;
+    margin: 2rem;
+}
+main{
+    width: 94vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    margin: 1rem;
+    /* border: 1px solid var(--white-color); */
+}
+#main{
+    width: 94vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    /* border: 1px solid var(--white-color); */
+    margin: 1rem auto;
+    background-color: rgba(31, 31, 31, 0.507);
+    border-radius: var(--border-radius);;
+    border-top: 5px solid var(--white-color);
+    box-shadow: 0px -5px 5px rgba(255, 255, 255, 0.158);
+    padding: 25px;
+}
+#main-text{
+    zoom: 110%;
+    width: 400px;
+    padding: auto 20px;
+    margin: auto 10px;
+    border-left: 2px solid rgba(226, 226, 226, 0.356);
+    border-right: 2px solid rgba(226, 226, 226, 0.356);
+}
+#main-img img{
+    position:relative;
+    min-width: 320px;
+    max-width: 500px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px var(--img-box-shadow);
+    border-radius: var(--border-radius);;
+    padding: 0%;
+    margin: auto 15px;
+} 
+
+.logo_bootom{
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    
+}
+.socializare{
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    border-radius: var(--border-radius);;
+    margin: 1rem;
+    border-top: 5px solid var(--white-color);
+    box-shadow: 0px -5px 5px rgba(255, 255, 255, 0.158);
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.socializare div{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    width: 100px;
+    font-style: unset;
+    text-decoration: none;
+    font-size: medium;
+}
+.socializare div a{
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--white-color);
+    font-style: unset;
+    text-decoration: none;
+    font-size: xx-large;
+}
+.socializare a:hover{
+    background-color: var(--white-color);
+    color: var(--b-background-color);
+    transform: scale(1.1);
+    transition: all .1s ease-in-out;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.158);
+}
+.socializare div p{
+    margin: 5px;
+    padding: 0;
+}
+#logo {
+    height: 10vh;
+    width: 94%;
+    background-image: url("logo_flo_white.gif");
+    background-size:contain;
+    background-position:center;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-top: 2rem;
+    /* border-top: 2px solid var(--white-color); */
+}
+body div a{
+    padding: 10px;
+    margin: 10px;
+}
