@@ -4,7 +4,7 @@
     --white-color: rgba(255, 255, 255, 0.432);
     --body_box_color: linear-gradient(0deg, rgb(243, 243, 243), 40%, rgb(219, 219, 219));
     --img-box-shadow: rgb(0, 0, 0);
-    --b-background-color: rgba(19, 18, 18, 0.747);
+    --b-background-color: rgba(9, 9, 9, 0.747);
     --text-color: rgb(235, 235, 235);
     --hover-color:rgb(56, 0, 0);
     --border-radius: 10px
@@ -115,7 +115,7 @@ header{
     background-color:rgb(204, 203, 203);
 }
 #telefon h3{
-    color: var(--b-background-color);
+    color: black;
     font-size: 1.3em;
     margin: 0;
     padding: 0;
